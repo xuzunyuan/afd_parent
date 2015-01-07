@@ -84,6 +84,7 @@
 		<unionpay.version>2.5</unionpay.version>
 		<thumbnailator.version>0.4.6</thumbnailator.version>
 		<emayclient.version>1.0</emayclient.version>
+		<corba-driver.version>1.0.0</corba-driver.version>
 		<java.version>1.7</java.version>
 	</properties>
 	
@@ -187,15 +188,7 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>${mybatis-spring.version}</version>
 		</dependency>
-		<!-- mybatis end -->
-		
-		<!-- oracle begin -->		
-		<dependency>
-			<groupId>ojdbc</groupId>
-			<artifactId>ojdbc</artifactId>
-			<version>${ojdbc.version}</version>
-		</dependency>
-		<!-- oracle end -->
+		<!-- mybatis end -->		
 		
 		<!-- spring begin -->
 		<dependency>
@@ -320,6 +313,11 @@
 			<version>${druid.version}</version>
 		</dependency>
 		<dependency>
+		  <groupId>com.alibaba</groupId>
+		  <artifactId>corba-driver</artifactId>
+		  <version>${corba-driver.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
@@ -440,6 +438,14 @@
 				<version>${mysql-connector.version}</version>
 			</dependency>
 			<!-- mysql end -->
+			
+			<!-- oracle begin -->		
+			<dependency>
+				<groupId>ojdbc</groupId>
+				<artifactId>ojdbc</artifactId>
+				<version>${ojdbc.version}</version>
+			</dependency>
+			<!-- oracle end -->			
 			
 			<!-- shiro begin -->
 			<dependency>
