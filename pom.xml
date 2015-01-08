@@ -295,6 +295,14 @@
 	    </dependency>
 	    <!-- redis end -->
 	    
+	    <!-- mysql begin -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector.version}</version>
+		</dependency>
+		<!-- mysql end -->
+	    
 	    <!-- alibaba begin -->
 	    <dependency>
             <groupId>com.alibaba</groupId>
@@ -430,15 +438,7 @@
 	
 	<!-- 可选配置，项目里需要用到必须要申明不用加版本号 -->
 	<dependencyManagement>
-		<dependencies>
-			<!-- mysql begin -->
-			<dependency>
-				<groupId>mysql</groupId>
-				<artifactId>mysql-connector-java</artifactId>
-				<version>${mysql-connector.version}</version>
-			</dependency>
-			<!-- mysql end -->
-			
+		<dependencies>			
 			<!-- oracle begin -->		
 			<dependency>
 				<groupId>ojdbc</groupId>
